@@ -1,0 +1,13 @@
+spring.application.name=demo
+spring.datasource.url=jdbc:postgresql://localhost:5432/${DB_NAME:your_database_name}
+spring.datasource.username=${DB_USERNAME:your_username}
+spring.datasource.password=${DB_PASSWORD:your_password}
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# Optional: Enable for debugging (remove in production)
+# spring.jpa.show-sql=true
+# spring.jpa.properties.hibernate.format_sql=true
+# logging.level.org.springframework.web=DEBUG
+# logging.level.org.hibernate.SQL=DEBUG
